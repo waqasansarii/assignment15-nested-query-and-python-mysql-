@@ -43,12 +43,12 @@ product_data = [
 # )
 
 def main():
-    num=True
+    num=10
     while int(num):
-        print(num)
+        # print(num)
         num = input('please enter number between (1 to 7) and 0 for exit: ')
         if int(num) == 1:
-            category_name = input('Enter category name')
+            category_name = input('Enter category name: ')
             add_category(db_conn,category_name)
         elif int(num) == 2:
             product_name = input('Enter product name: ')
